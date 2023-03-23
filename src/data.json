@@ -1,0 +1,129 @@
+[
+    {
+        "index": 0,
+        "name": "Jett",
+        "role": "Duelist",
+        "agentImage": "images/Jett.png",
+        "agentIcon": "images/Jett-icon.png",
+        "abilities": [
+            {
+                "keybind": "INFO",
+                "icon": "images/DuelistClassSymbol.png" 
+            },
+            {
+                "keybind": "C",
+                "icon": "images/Cloudburst.png" 
+            },
+            {
+                "keybind": "Q",
+                "icon": "images/Updraft.png" 
+            },
+            {
+                "keybind": "E",
+                "icon": "images/Tailwind.png" 
+            },
+            {
+                "keybind": "X",
+                "icon": "./images/Blade_Storm.png" 
+            }                
+        ],
+        "agentDiscription": "Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. She runs circles around every skirmish, cutting enemies before they even know what hit them.",
+        "classDiscription": "Duelists are self-sufficient fraggers who their team expects, through abilities and skills, to get high frags and seek out engagements first."
+    },
+
+    {
+        "index": 1,
+        "name": "Sage",
+        "role": "Sentinel",
+        "agentImage": "./images/Sage.png",
+        "agentIcon": "./images/Sage_icon.png",
+        "abilities": [
+            {
+                "keybind": "INFO",
+                "icon": "./images/SentinelClassSymbol.png" 
+            },
+            {
+                "keybind": "C",
+                "icon": "./images/Barrier_Orb.png" 
+            },
+            {
+                "keybind": "Q",
+                "icon": "./images/Slow_Orb.png" 
+            },
+            {
+                "keybind": "E",
+                "icon": "./images/Healing_Orb.png" 
+            },
+            {
+                "keybind": "X",
+                "icon": "./images/Resurrection.png" 
+            }
+        ],
+        "agentDiscription": "The bastion of China, Sage creates safety for herself and her team wherever she goes. Able to revive fallen friends and stave off aggressive pushes, she provides a calm center to a hellish fight.",
+        "classDiscription": "Sentinels are defensive experts who can lock down areas and watch flanks, both on attacker and defender rounds."
+    },
+
+    {
+        "index": 2,
+        "name": "Viper",
+        "role": "Controller",
+        "agentImage": "./images/Viper.png",
+        "agentIcon": "./images/Viper_icon.png",
+        "abilities": [
+            {
+                "keybind": "INFO",
+                "icon": "./images/ControllerClassSymbol.png" 
+            },
+            {
+                "keybind": "C",
+                "icon": "./images/Snake_Bite.png" 
+            },
+            {
+                "keybind": "Q",
+                "icon": "./images/Poison_Cloud.png" 
+            },
+            {
+                "keybind": "E",
+                "icon": "./images/Toxic_Screen.png" 
+            },
+            {
+                "keybind": "X",
+                "icon": "./images/Viper_Pit.png" 
+            }
+        ],
+        "agentDiscription": "The American chemist, Viper deploys an array of poisonous chemical devices to control the battlefield and cripple the enemy's vision. If the toxins don't kill her prey, her mind games surely will.",
+        "classDiscription": "Controllers are experts in slicing up dangerous territory to set their team up for success."
+    },
+
+    {
+        "index": 3,
+        "name": "Fade",
+        "role": "Initiator",
+        "agentImage": "./images/Fade.png",
+        "agentIcon": "./images/Fade_icon.png",
+        "abilities": [
+            {
+                "keybind": "INFO",
+                "icon": "./images/InitiatorClassSymbol.png" 
+            },
+            {
+                "keybind": "C",
+                "icon": "./images/Prowler.png" 
+            },
+            {
+                "keybind": "Q",
+                "icon": "./images/Seize.png" 
+            },
+            {
+                "keybind": "E",
+                "icon": "./images/Haunt.png" 
+            },
+            {
+                "keybind": "X",
+                "icon": "./images/Nightfall.png" 
+            }
+        ],
+        "agentDiscription": "Turkish bounty hunter Fade unleashes the power of raw nightmare to seize enemy secrets. Attuned with terror itself, she hunts down targets and reveals their deepest fears - before crushing them in the dark.",
+        "classDiscription": "Initiators challenge angles by setting up their team to enter contested ground and push defenders away."
+    }
+]
