@@ -2,6 +2,22 @@ import { useState } from 'react';
 import './App.css';
 import Data from './data.json';
 
+function decreaseIndex( index )
+{
+  if (index<=0) {
+    return (Data.length-1)
+  }
+  else return (index-1);
+}
+
+function increaseIndex( index )
+{
+  if (index>=Data.length-1) {
+    return (0)
+  }
+  else return (index+1);
+}
+
 const AbilityBoxes = ({ index }) =>
 {
    return Data[index].abilities.map ( abilityData =>{
@@ -43,7 +59,16 @@ function App() {
   const [index, setIndex] = useState(0);
   return (
     <div className="App">
-      <div className="screen">
+      <div className="screen" style={{
+        backgroundColor: `${Data[index].background}`
+      }}>
+
+        {
+          Data.map( data => {
+            return(
+            <img src={data.agentImage} alt="" className={`agent-img ${index===data.index? "active" : ""}`}  draggable="false"></img>
+          )})
+        }
         
         <DetailBox index={index}/>
 
@@ -59,12 +84,16 @@ function App() {
           }
         </div>
         
-        {
-          Data.map( data => {
-            return(
-            <img src={data.agentImage} alt="" className={`agent-img ${index===data.index? "active" : ""}`}  draggable="false"></img>
-          )})
-        }        
+        <div class="index-wrap">
+          <button class="index-button" onClick={()=>{
+            setIndex(decreaseIndex)
+          }}>&lt;</button>
+          <span class="index"> {index+1} / {Data.length} </span>
+          <button class="index-button" onClick={()=>{
+            setIndex(increaseIndex)
+          }}>&gt;</button>
+        </div>
+
       </div>
     </div>
   );

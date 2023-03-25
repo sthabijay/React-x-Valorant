@@ -5,6 +5,7 @@
         "role": "Duelist",
         "agentImage": "images/Jett.png",
         "agentIcon": "images/Jett-icon.png",
+        "background": "#273c64",
         "abilities": [
             {
                 "keybind": "INFO",
@@ -37,6 +38,7 @@
         "role": "Sentinel",
         "agentImage": "./images/Sage.png",
         "agentIcon": "./images/Sage_icon.png",
+        "background": "#457a78",
         "abilities": [
             {
                 "keybind": "INFO",
@@ -69,6 +71,7 @@
         "role": "Controller",
         "agentImage": "./images/Viper.png",
         "agentIcon": "./images/Viper_icon.png",
+        "background": "#205449",
         "abilities": [
             {
                 "keybind": "INFO",
@@ -101,6 +104,7 @@
         "role": "Initiator",
         "agentImage": "./images/Fade.png",
         "agentIcon": "./images/Fade_icon.png",
+        "background": "#303453",
         "abilities": [
             {
                 "keybind": "INFO",

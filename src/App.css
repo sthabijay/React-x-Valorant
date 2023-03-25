@@ -15,14 +15,16 @@ html{
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #000;
 }
 
 .screen{
-  background-color: #2e436c;
+  background-color: #273c64;
   width: 100vw;
   aspect-ratio: 16/9;
   position: relative;
   overflow: hidden;
+  transition: background-color 500ms;
 }
 
 .agent-img{
@@ -30,7 +32,7 @@ html{
   position: absolute;
   left: 50%;
   transform: translateX(-200%) translateY(10%) scale(1.45);
-  transition: transform 250ms; 
+  transition: transform 250ms;
 }
 
 .agent-img.active{
@@ -166,16 +168,51 @@ h5::after{
 .agent-button.selected{
   outline: 0.2vw solid #e3eeb6;
   outline-offset: 0.2vw;
-  background-color: rgba(169,218,220, 0.3)
+  background-color: rgba(169,218,220, 0.3);
 }
 
 .agent-icon{
   object-fit: fill;
   max-height: 100%;
   max-width: 100%;
-  background-color: rgba(169,218,220, 0.3);
+  background-color: rgba(169,218,220,0.3);
 }
 
+.index-wrap{
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 10%;
+  height: 4%;
+  transform: translateX(-50%);
+  color: white;
+}
+
+.index{
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(1px + 1vw);
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.index-button{
+  background-color: rgba(100,100,100,0.5);
+  color: #ccc;
+  border: none;
+  width: 100%;
+  font-weight: bold;
+  font-size: calc(1px + 1vw);
+}
+
+.index-button:hover{
+  background-color: rgba(100,100,100,0.7);
+}
 
 @media (min-aspect-ratio: 16/9) {
   .screen{
